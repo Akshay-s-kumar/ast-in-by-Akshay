@@ -59,8 +59,6 @@ body{
     position: sticky;
     top: 0;
     left: 0;
-
-
 }
 #navbar{
     display: flex;
@@ -145,8 +143,142 @@ body{
     transition: 0.3s ease-in-out;
    
 }
+#headerblog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#heroshop{
+    background-image: url("images/heroshop2.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 58% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#heroblog{
+    background-image: url("images/heroblog.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 28% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#heroshop p{
+    color:#ffffff;
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: bolder;
+    align-content: center;
+    opacity: 50%;
+}
+#heroblog strong{
+    position: absolute;
+    bottom: 90px;
+    left: 170px;
+    color:#0e0c0c;
+    font-size: 80px;
+    margin: 40px;
+    font-weight: bolder;
+    align-content: center;
+
+}
+#heroblog2 p {
+
+    color: #161616;
+    font-size: 23px;
+    margin: 10px;
+    font-weight: bolder;
+    align-content: center;
+    text-indent: 15px;
+}
+#heroblog p{
+    color:#ffffff;
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: bolder;
+    align-content: center;
+
+}
+
+
+
+
+#fproheadshop{
+    margin-top: 20px;
+    background-image: url("images/proshop2.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 100%;  
+}
+#fproheadshop2{
+    margin-top: 20px;
+    background-image: url("images/products/proshopbt.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 100%;  
+}
+#fproheadshop3{
+    margin-top: 20px;
+    background-image: url("images/proshopoft.jpg");
+    background-size: cover;
+    background-position: 100%;
+    height: 450px;
+    width: 100%;  
+}
+#fproheadshop4{
+    margin-top: 20px;
+    background-image: url("images/proshopac.jpg");
+    background-size: cover;
+    background-position: 100%;
+    height: 450px;
+    width: 100%;  
+}
+#fproheadshop h1{
+    color: #f49d1a;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 195px;
+}
+#fproheadshop2 h1{
+    color: #ffffff;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 195px;
+}
+#fproheadshop3 h1{
+    color: #15efe8;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 195px;
+}
+#fproheadshop4 h1{
+    color: #5f1af4;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 195px;
+}
 #products{
-    color: lab(40 .2 30.32);
+    color: rgb(159, 109, 10);
     height: 215px;
     padding-top: 60px;
     width: 100%;
@@ -176,6 +308,9 @@ body{
     border: 10px 20px  solid #0e0f0f;
     border-radius: 4px;
     margin: 15px 0;
+}
+#feature .fe-box a{
+    text-decoration: none;
 }
 #feature img:hover{
     box-shadow: 5px 5px 30px  rgb(157, 151, 151);
@@ -393,8 +528,98 @@ footer .foot2 button{
 @media (max-width:799px){
     .section-p1{
         padding: 40px 40px;
-    
     }
+    #heroblog strong {
+        position: absolute;
+        bottom: 150px;
+        left: 35px;
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+    #heroblog2 p {
+
+        color: #161616;
+        font-size: 23px;
+        margin: 10px;
+        font-weight: bolder;
+        align-content: center;
+        text-indent: 15px;
+    }
+    #heroblog {
+        background-image: url("images/heroblog.jpg");
+        height: 70vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 28% left 44%;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #mobile {
+        position: absolute;
+        right: 15px;
+    }
+    #fproheadshop{
+        margin-top: 20px;
+        background-image: url("images/proshop2.jpg");
+        height: 120px;
+        width: 100%;  
+    }
+    #fproheadshop2{
+        margin-top: 20px;
+        background-image: url("images/products/proshopbt.jpg");
+        background-size: cover;
+        height: 120px;
+        width: 100%;  
+    }
+    #fproheadshop3{
+        margin-top: 20px;
+        background-image: url("images/proshopoft.jpg");
+        background-size: cover;
+        background-position: 100%;
+        height: 120px;
+        width: 100%;  
+    }
+    #fproheadshop4{
+        margin-top: 20px;
+        background-image: url("images/proshopac.jpg");
+        background-size: cover;
+        background-position: 100%;
+        height: 120px;
+        width: 100%;  
+    }
+    #fproheadshop h1{
+        color: #f49d1a;
+        font-size: 60px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 28px;
+    }
+    #fproheadshop2 h1{
+        color: #ffffff;
+        font-size:60px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 28px;
+    }
+    #fproheadshop3 h1{
+        color: #15efe8;
+        font-size: 60px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 28px;
+    }
+    #fproheadshop4 h1{
+        color: #5f1af4;
+        font-size: 60px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 28px;
+    }
+    
     
     #navbar{
         display: flex;
