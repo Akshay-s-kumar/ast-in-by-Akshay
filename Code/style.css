@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 44px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+
+}
+.section-m1{
+    margin: 40px 0 ;
+}
+body{
+    width: 100%;
+}
+.logo{
+    position: relative;
+    right: 30px;
+   height: 70px;
+   width: 70px;
+   display: flex;
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar a{
+    text-decoration: none;
+    font-size:  16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(36, 186, 136);
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:rgb(36, 186, 136);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+#hero{
+    background-image: url("images/hero2.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 58% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+}
+#hero h2{
+    color: #E3E6F3;
+}
+#hero h4{
+    color: rgb(36, 186, 136);
+   
+}
+#hero p{
+    color:#f3f4f6;
+    font-size: 20px;
+    margin-top: 0;
+   
+}
+#hero button{
+    background: none;
+    border: none;
+    color: rgb(13, 247, 169);
+    font-size: 36px;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    cursor: pointer; 
+    transition: 0.3s ease-in-out;
+}
+#hero button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+   
+}
+#products{
+    color: lab(40 .2 30.32);
+    height: 215px;
+    padding-top: 60px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    background-image: url(images/pro1.jpg);
+    background-size: cover;
+  
+
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+#feature .fe-box{
+    height: 300px;
+    width:280px;
+    text-align: center;
+    padding:25px 15px;
+    box-shadow: 10px 20px 34px rgba(0,0,0,0.06);
+    border: 10px 20px  solid #0e0f0f;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature img:hover{
+    box-shadow: 5px 5px 30px  rgb(157, 151, 151);
+    transition: 0.3s ease-in-out;
+}
+#feature img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+#feature h6{
+    position: relative;
+    bottom: 60%;
+    font-size: 48px;
+    color: rgb(240, 237, 237);
+}
+#fprohead{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    background-image: url("images/pro3.jpg");
+    background-size: cover;
+    padding:50px 15px;
+    height: 170px;
+    width: 100%;
+    
+}
+#fprohead p{
+    color: #0e5805;
+    font-size: 25px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-weight: bolder;
+}
+#fproduct .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+#fproduct .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+ 
+}
+#fproduct .pro:hover{
+    box-shadow: 20px 20px 30px rgb(231, 227, 227);
+}
+#fproduct .pro img{
+    width: 100%;
+}
+#fproduct .pro span{
+    text-align: start;
+    text-decoration: none;
+    color: #0e0f0f;
+    font-size: 25px;
+    font-weight: bold;
+    color: #475d53;
+}
+#fproduct .pro h4{
+    text-align: start;;
+    text-decoration: none;
+    color: #494b4a;
+    margin:10px 0px;
+}
+#fproduct .pro a{
+    text-decoration: none;
+}
+#fproduct .pro p{
+    margin-top: 0;
+}
+#fproduct .pro a h3{
+    font-size: 20px;
+    color: #954f0ed0;
+}
+#banners1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#banners1 a{
+    text-decoration: none;
+}
+#banners1 h5{
+    font-size: 45px;
+    color: #26714f;
+}
+#banners1 .banner1-box2 h5{
+    color: #6b2ecd;
+}
+#banners1 h4{
+    font-size: 25px;
+    color: #d1d2d5;
+}
+#banners1 h2{
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    font-size: 50px;
+}
+#banners1 .banner1-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    padding: 30px;
+    background:url("images/products/propic5.jpg");
+    min-width: 650px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banners1 .banner1-box2{
+    background-image: url("images/products/banner2.jpg");
+    min-width: 650px;
+    height: 50vh;
+    padding: 30px ;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+#text-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#text-banner .text-banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url("images/textban1.jpg");
+    background-size: cover;
+    height: 250px;
+    min-width: 410px;
+    background-position: center;
+
+}
+#text-banner .text-banner-box2{
+    background: url("images/textban2.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: cover;
+    height: 250px;
+    min-width: 410px;
+    background-position: center;
+}
+#text-banner .text-banner-box3{
+    background: url("images/textban3.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: cover;
+    height: 250px;
+    min-width: 410px;
+    background-position: center;
+}
+#text-banner a{
+    text-decoration: none;
+
+}
+#text-banner h2{
+    padding: 0 30px;
+    font-size:70px;
+    color: #14c377;
+    font-weight: bolder;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #11051e;
+    
+}
+footer img{
+    height: 200px;
+    width: 300px;
+    padding-bottom: 20px;
+
+}
+footer .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 70px;
+
+}
+footer .foot2{
+   
+    padding-bottom: 70px;
+}
+
+footer .foot2 button{
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #393838;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media (max-width:799px){
+    .section-p1{
+        padding: 40px 40px;
+    
+    }
+    
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60pxrgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #393838;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #0e0f0f;
+        font-size: 24px;
+    }
+    #bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: center;
+              
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+    
+        margin: 25px ;
+    }
+    #fproduct .pro-container {
+
+        justify-content: center;
+
+    }
+    #fproduct .pro {
+
+        margin: 25px;
+ 
+    }
+   
+    #banners1 .banner1-box {
+        height: 300px;
+        width: 100%;
+    }
+    #banners1 .banner1-box2 {
+        height: 300px;
+        width: 100%;
+        
+    }
+   
+    #text-banner .text-banner-box {
+        width: 2%;
+        margin: 10px;
+    }
+    #text-banner .text-banner-box2 {
+        width: 2%;
+        margin: 10px;
+    }
+    #text-banner .text-banner-box3 {
+        width: 2%;
+        margin: 10px;
+    }
+   
+}
+@media (max-width: 477px) {
+    .section-p1{
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+        
+    }
+     
+    
+    #hero{
+        height: 720px;
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #products {
+        height: 100px;
+        padding-top: 31px;
+        width: 100%;
+        font-size: 52px;
+    }
+    #feature{
+        justify-content: space-around;
+        
+    }
+    #feature .fe-box {
+        height: 220px;
+        width: 135px;
+        margin: 0 0 15px 0;
+    }
+    #feature h6 {
+        bottom: 60%;
+        font-size: 22px;
+        color: rgb(240, 237, 237);
+    }
+    #fprohead {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    #fprohead p {
+        color: #0e5805;
+        font-size: 18px;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        font-weight: bolder;
+    }
+    #banners1 .banner1-box {
+        height: 200px ;
+        min-width: 280px;
+    }
+    #banners1 h2 {
+        color: rgb(255, 255, 255);
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    #banners1 h4 {
+        font-size: 25px;
+        color: #d1d2d5;
+    }
+    #banners1 h5 {
+        font-size: 35px;
+        color: #26714f;
+    }
+    #banners1 .banner1-box2 h5 {
+        color: #6b2ecd;
+        font-size: 35px;
+    }
+    #banners1 .banner1-box2 {
+        height: 200px ;
+        min-width: 280px;
+    }
+    #text-banner {
+          white-space: none;
+          justify-content: space-between;
+ 
+    }
+    #text-banner .text-banner-box {
+
+        height: 120px;
+        min-width: 85px;
+    
+    }
+    #text-banner .text-banner-box2 {
+
+        height: 120px;
+        min-width: 85px;
+    }
+    #text-banner .text-banner-box3 {
+        height: 120px;
+        min-width: 85px;
+    }
+    #text-banner h2 {
+        padding: 0;
+        font-size: 15px;
+        font-weight: bolder;
+
+    }
+    #text-banner .text-banner-box3 h2{
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    footer {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    footer img {
+        position: absolute;
+        right: 35px;
+        height:65px;
+        width: 75px;
+        padding-bottom: 20px;
+    }
+    footer .foot {
+        padding: 20px 0px;
+    }
+    footer .foot2 button {
+        font-size: 25px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
